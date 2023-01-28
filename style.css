@@ -10,18 +10,18 @@ body {
 he {
   font-weight: 200;
   font-size: xx-large;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family:Calibri;
   font-style: bold;
 }
 a{
   color: rgba(0, 0, 0, 0.884);
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family:Calibri;
   font-size:x-large;
   text-align: left;
 }
 z {
   color: b;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family:Calibri;
   font-size:x-large;
   text-align: center;
   ;
@@ -30,18 +30,23 @@ z {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   font-size: large;
 }
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  color: rgba(0, 0, 0, 0.884);
+  font-family:Calibri;
+  font-size:x-large;
+  text-align: left;
+}
+
 th, td {
-  padding-top: 10px;
-  padding-left: 10px;
-  padding-right: 10px;
-  font-size: x-large;
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  align-items: center;
+  text-align: left;
+  padding: 10px;
 }
 .head{
   width: 10%;
   height: 10%;
-  vertical-align: top;
-  align-items: center;
+
  
 }
