@@ -4,28 +4,22 @@
 
 body {
     background-color: rgb(253, 247, 222);
+    /* position: relative; */
 }
-
-table {
-    border-collapse: collapse;
-    width: 100%;
-}
-  
-  th, td {
-    text-align: center;
-    padding: 10px;
-    font-size: xx-large;
-  }
 
 .head {
+    background: rgb(253, 247, 222);
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: sticky;
+    z-index: 1;
+    top: 0;
 }
 
 #logo {
-    height: 10em;
-    width: 31em;
+    height: 15%;
+    width: 15%;
     border-radius: 2em;
     overflow: hidden;
 }
@@ -55,13 +49,15 @@ h1.abus {
     justify-content: center;
     flex-direction: column;
     border: 1px black solid;
-    transition: 2s;
+    transition: .8s;
+    z-index: 0;
     margin: 1em 0;
     padding: 1em;
     width: fit-content;
     height: fit-content;
     overflow: hidden;
-    position: relative;
+    /* position: relative; */
+    border-radius: 3%;
 }
 
 .tgs img,
@@ -69,7 +65,7 @@ h1.abus {
 .gca img {
     height: 30%;
     width: 69%;
-    border-radius: 0.5em;
+    border-radius: 1em;
 }
 
 p.gh {
@@ -83,7 +79,8 @@ p.gi {
 .tgs:hover,
 .mu:hover,
 .gca:hover {
-    transform: scale(1.05);
+    box-shadow: 0 0 1em #000;
+    transform: scale(1.01);
     transition: .8s;
 }
 
@@ -92,19 +89,22 @@ p.gi {
 .gca::before {
     width: fit-content;
     background: #000;
-    position: absolute;
+    /* position: absolute; */
 }
 
 .end1 {
     display: flex;
     align-items: center;
     justify-content: center;
+    
 }
 
 a{
-    color: #000;
-}
+    display: flex;
+    flex-direction: column;
+    color: rgba(0, 0, 0, 0.884);
+   align-items: center;
+   justify-content: center;
+  }
 
 
-
-/* @media screen and (max-width:780px) {} */
