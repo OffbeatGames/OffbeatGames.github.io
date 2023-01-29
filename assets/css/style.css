@@ -1,110 +1,123 @@
-* {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
+    * {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
 
-body {
-    background-color: rgb(253, 247, 222);
-    /* position: relative; */
-}
+    body {
+        background-color: rgb(241, 236, 215);
+        /* position: relative; */
+    }
 
-.head {
-    background: rgb(253, 247, 222);
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    position: sticky;
-    z-index: 1;
-    top: 0;
-}
+    .head {
+        background: rgb(241, 236, 215);
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: sticky;
+        z-index: 1;
+        top: 0;
+    }
+    p{
+        background: rgb(241, 236, 215);
+        font-size: large;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+       
+    }
 
-#logo {
-    height: 15%;
-    width: 15%;
-    border-radius: 2em;
-    overflow: hidden;
-}
-
-h1 {
-    text-align: center;
-}
-
-.head,
-h1.abus {
-    padding: 0 0 1em 0;
-    border-bottom: black solid 1px;
-}
-
-.games {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.tgs,
-.mu,
-.gca {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    border: 1px black solid;
-    transition: .8s;
-    z-index: 0;
-    margin: 1em 0;
-    padding: 1em;
-    width: fit-content;
-    height: fit-content;
-    overflow: hidden;
-    /* position: relative; */
-    border-radius: 3%;
-}
-
-.tgs img,
-.mu img,
-.gca img {
-    height: 30%;
-    width: 69%;
-    border-radius: 1em;
-}
-
-p.gh {
-    font-size: 1.5em;
-}
-
-p.gi {
-    font-size: 1.25em;
-}
-
-.tgs:hover,
-.mu:hover,
-.gca:hover {
-    box-shadow: 0 0 1em #000;
-    transform: scale(1.01);
-    transition: .8s;
-}
-
-.tgs::before,
-.mu::before,
-.gca::before {
-    width: fit-content;
-    background: #000;
-    /* position: absolute; */
-}
-
-.end1 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    #logo {
+        height: 15%;
+        width: 15%;
+        border-radius: 2em;
+        overflow: hidden;
+        max-width: 700px;
+        min-width: 350px;
     
-}
+    }
+ 
+    h1 {
+        text-align: center;
+    }
+    .gwm{
+        padding: 0 0 1em 0;
+        border-top: #000 1px;
+    }
+    .head
+    {
+        padding: 0 0 1em 0;
+        border-bottom: black solid 1px;
+        
+    }
+    .games {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
 
-a{
-    display: flex;
-    flex-direction: column;
-    color: rgba(0, 0, 0, 0.884);
-   align-items: center;
-   justify-content: center;
-  }
+    .tgs,
+    .mu,
+    .gca {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        border: 1px black solid;
+        transition: .8s;
+        z-index: 0;
+        margin: 1em 0;
+        padding: 1em;
+        width: fit-content;
+        height: fit-content;
+        overflow: hidden;
+        /* position: relative; */
+        border-radius: 3%;
+    }
+
+    .tgs img,
+    .mu img,
+    .gca img {
+        height: 30%;
+        width: 69%;
+        border-radius: 1em;
+    }
+
+    p.gh {
+        font-size: 1.5em;
+    }
+
+    p.gi {
+        font-size: 1.25em;
+    }
+
+    .tgs:hover,
+    .mu:hover,
+    .gca:hover {
+        box-shadow: 0 0 1em #000;
+        transform: scale(1.01);
+        transition: .8s;
+    }
+
+    .tgs::before,
+    .mu::before,
+    .gca::before {
+        width: fit-content;
+        background: #000;
+        /* position: absolute; */
+    }
+
+    .end1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+    a{
+        display: flex;
+        flex-direction: column;
+        color: rgba(0, 0, 0, 0.884);
+    align-items: center;
+    justify-content: center;
+    }
 
 
+    /* @media screen and (max-width:780px) {} */
