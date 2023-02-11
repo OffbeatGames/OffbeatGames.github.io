@@ -4,25 +4,23 @@
      text-align: center;
      color: #000;
 }
-.head {
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    position: sticky;
-    z-index: 1;
-    top: 0;
-}
+
 p{
     font-size: 1.5em;
     margin: 3%;
 }
 #logo {
-    height: 15%;
-    width: 15%;
+    display: flex;
+    position: sticky;
+    z-index: 1;
+    top: 0;
+    height: 13vh;
+    width: 20vw;
     border-radius: 2em;
     overflow: hidden;
     max-width: 700px;
-    min-width: 240px;
+
+    min-width: 250px;
 }
 .games {
     display: flex;
