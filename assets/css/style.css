@@ -60,7 +60,7 @@ p.abs{
     flex-direction: column;
     background: radial-gradient(#b455fcbd, #340b87c5);
     /* background: radial-gradient(#021635 30%, #004f8f 70%); */
-    border: 1px black solid;
+    /* border: 1px black solid; */
     transition: .8s;
     z-index: 0;
     margin: 1em 0;
@@ -69,6 +69,7 @@ p.abs{
     height: fit-content;
     /* background: #015958; */
     overflow: hidden;
+    animation: br-changing 10s ease-in-out infinite alternate;
     /* position: relative; */
     border-radius: 2em;
 }
