@@ -2,7 +2,7 @@
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-align: center;
     color:rgb(224, 249, 249);
-   
+    
 }
 
 body {
@@ -16,20 +16,22 @@ p {
     font-size: 1.5em;
     padding: 3%;
 }   
+p,a,h3,h1{
+    animation: color-changing2 both 10s ease-in-out infinite;
+}
 
 p.abs{
-    /* animation: color-changing2 both 10s ease-in-out infinite; */
     padding: 6%;
 }
 
 .head {
-    display: flex;
     position: sticky;
     z-index: 1;
     top: 0;
     width: min-content;
     border-radius: 2em;
     overflow: hidden;
+    animation: goofy-ahh 10s infinite alternate cubic-bezier(.68,-0.55,.27,1.55);
 }
 
 #logo {
@@ -139,25 +141,25 @@ a {
         background: linear-gradient( hwb(338 22% 0%),rgb(253, 245, 10),#5fff0e);
         background-clip: text;
         -webkit-text-fill-color: transparent;
-        box-shadow: -20px 0px 15px rgb(45, 118, 255);
+        /* box-shadow: -20px 0px 15px rgb(45, 118, 255); */
     }
     33%{
-        background: linear-gradient( #13ff3a, hwb(338 63% 0% / 0.999),rgb(251, 255, 19));
+        background: linear-gradient( #13ff3a, hwb(338 24% 0% / 0.999),rgb(251, 255, 19));
         background-clip: text;
         -webkit-text-fill-color: transparent;
-        box-shadow: 20px 0px 15px rgb(45, 118, 255);
+        /* box-shadow: 20px 0px 15px rgb(45, 118, 255); */
     }
     66%{
         background: linear-gradient( rgb(251, 255, 10), #0aff13, hwb(338 13% 0% / 0.999));
         background-clip: text;
         -webkit-text-fill-color: transparent;
-        box-shadow: 0px 10px 15px rgb(45, 118, 255);
+        /* box-shadow: 0px 10px 15px rgb(45, 118, 255); */
     }
     100%{
         background: linear-gradient( hwb(338 22% 0%),rgb(253, 245, 10),#5fff0e);
         background-clip: text;
         -webkit-text-fill-color: transparent;
-        box-shadow: 0px -10px 15px rgb(45, 118, 255);
+        /* box-shadow: 0px -10px 15px rgb(45, 118, 255); */
     }
 }
 @keyframes br-changing{
@@ -193,5 +195,14 @@ a {
     }
     100%{
         border: 2px rgb(255, 62, 62) solid;
+    }
+}
+
+@keyframes goofy-ahh {
+    from{
+        left: 0;
+    }
+    to{
+        left: 100%;
     }
 }
