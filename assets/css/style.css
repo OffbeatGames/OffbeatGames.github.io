@@ -21,7 +21,7 @@ p {
 }
 
 p.abs{
-    animation: color-changing2 both .2s ease-in-out infinite;
+    animation: color-changing2 both 10s ease-in-out infinite;
 }
 
 .head {
@@ -102,7 +102,8 @@ footer {
     justify-content: space-evenly;
     margin: 0;
     background: #00000086;
-    border: 1px rgba(255, 255, 255, 0.589) solid;
+    /* border: 1px rgba(255, 255, 255, 0.589) solid; */
+    animation: br-changing 10s ease-in-out infinite alternate;
     border-radius: 1em;
     font-size: 1.5em;
     padding: .6em;
@@ -134,20 +135,64 @@ a {
     }
 }
 
-/* @keyframes color-changing2 {
-    33%{
-        background: -webkit-linear-gradient(to bottom right #ff8383c9, hwb(338 2% 30% / 0.827),rgba(125, 5, 93, 0.789));
-        -webkit-background-clip: text;
+@keyframes color-changing2 {
+    0%{
+        background: linear-gradient( hwb(338 22% 0%),rgb(253, 245, 10),#5fff0e);
+        background-clip: text;
         -webkit-text-fill-color: transparent;
+        box-shadow: -20px 0px 15px rgb(45, 118, 255);
+    }
+    33%{
+        background: linear-gradient( #13ff3a, hwb(338 63% 0% / 0.999),rgb(251, 255, 19));
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        box-shadow: 20px 0px 15px rgb(45, 118, 255);
     }
     66%{
-        background: -webkit-linear-gradient(to bottom right rgba(125, 5, 93, 0.789), #ff8383c9, hwb(338 2% 30% / 0.827));
-        -webkit-background-clip: text;
+        background: linear-gradient( rgb(251, 255, 10), #0aff13, hwb(338 13% 0% / 0.999));
+        background-clip: text;
         -webkit-text-fill-color: transparent;
+        box-shadow: 0px 10px 15px rgb(45, 118, 255);
     }
-    99%{
-        background: -webkit-linear-gradient( to bottom right hwb(338 2% 30% / 0.827),rgba(125, 5, 93, 0.789),#ff8383c9);
-        -webkit-background-clip: text;
+    100%{
+        background: linear-gradient( hwb(338 22% 0%),rgb(253, 245, 10),#5fff0e);
+        background-clip: text;
         -webkit-text-fill-color: transparent;
+        box-shadow: 0px -10px 15px rgb(45, 118, 255);
     }
-} */
+}
+@keyframes br-changing{
+    0%{
+        border: 2px rgb(255, 66, 66) solid;
+    }
+    10%{
+        border: 2px rgb(12, 255, 41) solid;
+    }
+    20%{
+        border: 2px rgb(19, 255, 204) solid;
+    }
+    30%{
+        border: 2px rgb(53, 137, 255) solid;
+    }
+    40%{
+        border: 2px rgb(169, 35, 247) solid;
+    }
+    50%{
+        border: 2px rgb(255, 56, 215) solid;
+    }
+    60%{
+        border: 2px rgb(231, 255, 53) solid;
+    }
+    70%{
+        border: 2px rgb(52, 255, 170) solid;
+    }
+    80%{
+        border: 2px rgb(252, 110, 59) solid;
+    }
+    90%{
+        border: 2px rgb(184, 255, 62) solid;
+    }
+    100%{
+        border: 2px rgba(170, 185, 211, 0.589) solid;
+    }
+}
