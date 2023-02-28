@@ -31,7 +31,7 @@ p.abs{
     width: min-content;
     border-radius: 2em;
     overflow: hidden;
-    animation: goofy-ahh 10s infinite alternate cubic-bezier(.68,-0.55,.27,1.55);
+    /*animation: goofy-ahh 10s infinite alternate cubic-bezier(.68,-0.55,.27,1.55);*/
 }
 
 #logo {
@@ -118,7 +118,7 @@ a {
     justify-content: center;
 }
 
-@keyframes color-changing {
+/*@keyframes color-changing {
     0%{
         color: #f5babaf1;
     }
@@ -134,29 +134,29 @@ a {
     100%{
         color: rgba(180, 255, 180, 0.856);
     }
-}
+}*/
 
 @keyframes color-changing2 {
     0%{
-        background: linear-gradient( hwb(338 22% 0%),rgb(253, 245, 10),#5fff0e);
+        background:  burlywood;
         background-clip: text;
         -webkit-text-fill-color: transparent;
         /* box-shadow: -20px 0px 15px rgb(45, 118, 255); */
     }
     33%{
-        background: linear-gradient( #13ff3a, hwb(338 24% 0% / 0.999),rgb(251, 255, 19));
+        background:#f5babaf1;
         background-clip: text;
         -webkit-text-fill-color: transparent;
         /* box-shadow: 20px 0px 15px rgb(45, 118, 255); */
     }
     66%{
-        background: linear-gradient( rgb(251, 255, 10), #0aff13, hwb(338 13% 0% / 0.999));
+        background:antiquewhite;
         background-clip: text;
         -webkit-text-fill-color: transparent;
         /* box-shadow: 0px 10px 15px rgb(45, 118, 255); */
     }
     100%{
-        background: linear-gradient( hwb(338 22% 0%),rgb(253, 245, 10),#5fff0e);
+        background:burlywood;
         background-clip: text;
         -webkit-text-fill-color: transparent;
         /* box-shadow: 0px -10px 15px rgb(45, 118, 255); */
@@ -198,11 +198,11 @@ a {
     }
 }
 
-@keyframes goofy-ahh {
+/*@keyframes goofy-ahh {
     from{
         left: 0;
     }
     to{
         left: 100%;
     }
-}
+}*/
