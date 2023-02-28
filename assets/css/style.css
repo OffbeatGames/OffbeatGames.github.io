@@ -1,198 +1,66 @@
-* {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    text-align: center;
-    color: #ffffff;
-}
+<html>
 
-h1{
-    animation: color-changing 3s both ease-in-out infinite;
-}
+</html>
+<html lang="en">
 
-body {
-    background: linear-gradient(to bottom left,rgb(39, 127, 199),#0c3150 ,#004f8f,#000000);
-    background-color: #004f8f;
-    overflow-x: hidden;
-    position: relative;
-}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Offbeat Studios</title>
+</head>
 
-p {
-    font-size: 1.5em;
-    padding: 3%;
-}
+<body>
+    <div class="head">
+        <img id='logo' src="assets/img/offbeats_logog_1.jpg" alt="logo">
+    </div>
+    <h1 class="abus">Welcome to Offbeat Games</h1>
+    <p class="abs">Offbeat Games is a game development company based in India with a goal to create fun and exciting games .</p>
+    <h1 class="gwm">Games We Made</h1>
 
-p.abs{
-    animation: color-changing2 both 10s ease-in-out infinite;
-}
+    <div class="games">
 
-.head {
-    display: flex;
-    position: sticky;
-    z-index: 1;
-    top: 0;
-    width: min-content;
-    border-radius: 2em;
-    overflow: hidden;
-}
+        <div class="tgs">
+            <img src="assets/img/GreatEscaper01.jpg" alt="Great Escaper Image" class="responsive">
+            <p class="gh">The Great Escaper</p>
+            <p class="gi">
+                You Stole a car Ok , is it a crime worth being in prison for ?
+            </p>
+        </div>
 
-#logo {
-    height: 13vh;
-    width: 17vw;
-    max-width: 700px;
-    min-width: 250px;
-    
-}
+        <div class="mu">
+            <a target="_blank"
+                href="https://play.google.com/store/apps/details?id=com.offbeatsstudio.madlandscientist&hl=en&gl=US"><img
+                    src="assets/img/MsdUp01.jpg" alt="Messed up! : Tragedy of Lab" class="responsive"></a>
+            <a target="_blank"
+                href="https://play.google.com/store/apps/details?id=com.offbeatsstudio.madlandscientist&hl=en&gl=US">
+                <p class="gh">Messed up! : Tragedy of Lab</p>
+            </a>
+            <p class="gi">Survie a post apoclyptic world with DEADLY zombies</p>
+        </div>
 
-.games,
-.cuz,
-.ous {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
+        <div class="gca">
+            <a target="_blank"
+                href="https://play.google.com/store/apps/details?id=com.RapidSoft.GULGUL&hl=en&gl=US"><img
+                    src="assets/img/Gugul01.jpg" alt="GULGUL : cube adventure" class="responsive"></a>
+            <a target="_blank" href="https://play.google.com/store/apps/details?id=com.RapidSoft.GULGUL&hl=en&gl=US">
+                <p class="gh">GULGUL : Cube Adventure</p>
+            </a>
+            <p class="gi">A cube's journey filled with joy and adventures with 40 levels of relaxing puzzles and more
+            </p>
+        </div>
+    </div>
+    <footer>
+        <div class="cus">
+            <h3>contact us</h3>
+            <a target="_blank" href="mailto:offbeatgamestudio@gmail.com">Email</a>
+        </div>
+        <div class="ous">
+            <h3>our socials</h3>
+            <a target="_blank" href="https://www.youtube.com/@offbeatgames1191">Youtube</a>
+            <a target="_blank" href="https://www.instagram.com/offbeat_games/">Instagram</a>
+        </div>
+    </footer>
 
-.tgs,
-.mu,
-.gca {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    background: radial-gradient(#b455fcbd, #340b87c5);
-    /* background: radial-gradient(#021635 30%, #004f8f 70%); */
-    border: 1px black solid;
-    transition: .8s;
-    z-index: 0;
-    margin: 1em 0;
-    padding: 1em;
-    width: fit-content;
-    height: fit-content;
-    /* background: #015958; */
-    overflow: hidden;
-    /* position: relative; */
-    border-radius: 2em;
-}
-
-.tgs img,
-.mu img,
-.gca img {
-    height: 30%;
-    width: 69%;
-    border-radius: 1em;
-}
-
-.tgs:hover,
-.mu:hover,
-.gca:hover {
-    box-shadow: 0 0 1em #4faff3b8;
-    transform: scale(1.01) translateX(-1em) translateY(-1em);
-    transition: .8s;
-}
-
-/* .tgs::before,
-.mu::before,
-.gca::before {
-    width: fit-content;
-    background: #000;
-    position: absolute;
-} */
-footer {
-    display: flex;
-    text-transform: capitalize;
-    justify-content: space-evenly;
-    margin: 0;
-    background: #00000086;
-    /* border: 1px rgba(255, 255, 255, 0.589) solid; */
-    animation: br-changing 10s ease-in-out infinite alternate;
-    border-radius: 1em;
-    font-size: 1.5em;
-    padding: .6em;
-}
-
-a {
-    display: flex;
-    flex-direction: column;
-    text-decoration: none;
-    align-items: center;
-    justify-content: center;
-}
-
-@keyframes color-changing {
-    0%{
-        color: #f5babaf1;
-    }
-    25%{
-        color: rgba(108, 182, 247, 0.81);
-    }
-    50%{
-        color: antiquewhite;
-    }
-    75%{
-        color: burlywood;
-    }
-    100%{
-        color: rgba(180, 255, 180, 0.856);
-    }
-}
-
-@keyframes color-changing2 {
-    0%{
-        background: linear-gradient( hwb(338 22% 0%),rgb(253, 245, 10),#5fff0e);
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
-        box-shadow: -20px 0px 15px rgb(45, 118, 255);
-    }
-    33%{
-        background: linear-gradient( #13ff3a, hwb(338 63% 0% / 0.999),rgb(251, 255, 19));
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
-        box-shadow: 20px 0px 15px rgb(45, 118, 255);
-    }
-    66%{
-        background: linear-gradient( rgb(251, 255, 10), #0aff13, hwb(338 13% 0% / 0.999));
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
-        box-shadow: 0px 10px 15px rgb(45, 118, 255);
-    }
-    100%{
-        background: linear-gradient( hwb(338 22% 0%),rgb(253, 245, 10),#5fff0e);
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
-        box-shadow: 0px -10px 15px rgb(45, 118, 255);
-    }
-}
-@keyframes br-changing{
-    0%{
-        border: 2px rgb(255, 66, 66) solid;
-    }
-    10%{
-        border: 2px rgb(12, 255, 41) solid;
-    }
-    20%{
-        border: 2px rgb(19, 255, 204) solid;
-    }
-    30%{
-        border: 2px rgb(53, 137, 255) solid;
-    }
-    40%{
-        border: 2px rgb(169, 35, 247) solid;
-    }
-    50%{
-        border: 2px rgb(255, 56, 215) solid;
-    }
-    60%{
-        border: 2px rgb(231, 255, 53) solid;
-    }
-    70%{
-        border: 2px rgb(52, 255, 170) solid;
-    }
-    80%{
-        border: 2px rgb(252, 110, 59) solid;
-    }
-    90%{
-        border: 2px rgb(184, 255, 62) solid;
-    }
-    100%{
-        border: 2px rgba(170, 185, 211, 0.589) solid;
-    }
-}
+</body>
+</html>
