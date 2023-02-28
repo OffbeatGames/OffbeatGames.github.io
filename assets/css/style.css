@@ -103,7 +103,7 @@ footer {
     margin: 0;
     background: #00000086;
     /* border: 1px rgba(255, 255, 255, 0.589) solid; */
-    animation: br-changing 2s ease-in-out infinite alternate;
+    animation: br-changing 10s ease-in-out infinite alternate;
     border-radius: 1em;
     font-size: 1.5em;
     padding: .6em;
@@ -163,36 +163,36 @@ a {
 }
 @keyframes br-changing{
     0%{
-        border: 1px rgb(255, 66, 66) solid;
+        border: 2px rgb(255, 66, 66) solid;
     }
     10%{
-        border: 1px rgb(12, 255, 41) solid;
+        border: 2px rgb(12, 255, 41) solid;
     }
     20%{
-        border: 1px rgb(19, 255, 204) solid;
+        border: 2px rgb(19, 255, 204) solid;
     }
     30%{
-        border: 1px rgb(53, 137, 255) solid;
+        border: 2px rgb(53, 137, 255) solid;
     }
     40%{
-        border: 1px rgb(169, 35, 247) solid;
+        border: 2px rgb(169, 35, 247) solid;
     }
     50%{
-        border: 1px rgb(255, 56, 215) solid;
+        border: 2px rgb(255, 56, 215) solid;
     }
     60%{
-        border: 1px rgb(231, 255, 53) solid;
+        border: 2px rgb(231, 255, 53) solid;
     }
     70%{
-        border: 1px rgb(52, 255, 170) solid;
+        border: 2px rgb(52, 255, 170) solid;
     }
     80%{
-        border: 1px rgb(252, 110, 59) solid;
+        border: 2px rgb(252, 110, 59) solid;
     }
     90%{
-        border: 1px rgb(184, 255, 62) solid;
+        border: 2px rgb(184, 255, 62) solid;
     }
     100%{
-        border: 1px rgba(170, 185, 211, 0.589) solid;
+        border: 2px rgba(170, 185, 211, 0.589) solid;
     }
 }
