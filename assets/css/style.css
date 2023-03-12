@@ -1,16 +1,15 @@
 * {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: center;
-    color:rgb(224, 249, 249);
-    
-}
+    color: rgb(224, 249, 249);
 
-a {
+}
+a{
     text-decoration: none;
 }
 
 body {
-    background: linear-gradient(to bottom left,rgb(42, 38, 38),rgb(23, 23, 22) , rgba(8, 8, 8, 0.945));
+    background: linear-gradient(to bottom left, rgb(42, 38, 38), rgb(23, 23, 22), rgba(8, 8, 8, 0.945));
     background-color: #004f8f;
     overflow-x: hidden;
     position: relative;
@@ -19,12 +18,15 @@ body {
 p {
     font-size: 1.5em;
     padding: 3%;
-}   
-p,a,h3,h1{
+}
+
+p,
+h3,
+h1 {
     animation: color-changing2 both 10s ease-in-out infinite;
 }
 
-p.abs{
+p.abs {
     padding: 6%;
 }
 
@@ -43,11 +45,11 @@ p.abs{
     width: 17vw;
     max-width: 700px;
     min-width: 250px;
-    
+
 }
 
 .games,
-.cuz,
+.cus,
 .ous {
     display: flex;
     flex-direction: column;
@@ -86,6 +88,11 @@ p.abs{
     border-radius: 1em;
 }
 
+i.fa.fa-instagram:hover,i.fa-youtube:hover {
+    color: rgb(175, 34, 58);
+    transition: .5s ease-in-out;
+    background: #ffffff;
+}
 .tgs:hover,
 .mu:hover,
 .gca:hover {
@@ -93,101 +100,126 @@ p.abs{
     transition: .8s;
 }
 
-/* .tgs::before,
-.mu::before,
-.gca::before {
-    width: fit-content;
-    background: #000;
-    position: absolute;
-} */
 footer {
     display: flex;
     text-transform: capitalize;
-    justify-content: space-evenly;
-    margin: 0;
-    border-radius: 1em;
+    justify-content: space-around;
+    align-items: first baseline;
     font-size: 1.5em;
     animation: goofy-ahh 3s ease-in-out infinite alternate;
-    padding: .6em;
 }
 
+.ous a i,.cus a i{
+    margin: .5em;
+    color: white;
+    border-radius: 5em;
+    transition: .5s ease-in-out;
+    padding: .2em;
+    font-size: 1.2em;
+    font-weight: 900;
+}
+i.fa-envelope:hover{
+    background-color: rgb(175, 34, 58);
+    color: rgb(252, 255, 240);
+}
+i.fa-youtube,i.fa-instagram,i.fa-envelope{
+    transition: .5s ease-in-out;
+}
+
+
 @keyframes color-changing2 {
-    0%{
-        background:  burlywood;
+    0% {
+        background: burlywood;
         background-clip: text;
         -webkit-text-fill-color: transparent;
         /* box-shadow: -20px 0px 15px rgb(45, 118, 255); */
     }
-    33%{
-        background:#f5babaf1;
+
+    33% {
+        background: #f5babaf1;
         background-clip: text;
         -webkit-text-fill-color: transparent;
         /* box-shadow: 20px 0px 15px rgb(45, 118, 255); */
     }
-    66%{
-        background:antiquewhite;
+
+    66% {
+        background: antiquewhite;
         background-clip: text;
         -webkit-text-fill-color: transparent;
         /* box-shadow: 0px 10px 15px rgb(45, 118, 255); */
     }
-    100%{
-        background:burlywood;
+
+    100% {
+        background: burlywood;
         background-clip: text;
         -webkit-text-fill-color: transparent;
         /* box-shadow: 0px -10px 15px rgb(45, 118, 255); */
     }
 }
-@keyframes br-changing{
-    0%{
+
+@keyframes br-changing {
+    0% {
         border: 2px rgb(255, 66, 66) solid;
         box-shadow: 0 0 .75em rgb(255, 66, 66);
     }
-    10%{
+
+    10% {
         border: 2px rgb(255, 133, 12) solid;
         box-shadow: 0 0 .75em rgb(255, 133, 12);
     }
-    20%{
+
+    20% {
         border: 2px rgb(255, 196, 19) solid;
         box-shadow: 0 0 .75em rgb(255, 196, 19);
     }
-    30%{
+
+    30% {
         border: 2px rgb(12, 255, 41) solid;
-        box-shadow: 0 0 .75em rgb(12, 255, 41);    }
-    40%{
+        box-shadow: 0 0 .75em rgb(12, 255, 41);
+    }
+
+    40% {
         border: 2px rgb(12, 255, 113) solid;
         box-shadow: 0 0 .75em rgb(12, 255, 113);
     }
-    50%{
+
+    50% {
         border: 2px rgb(56, 255, 202) solid;
         box-shadow: 0 0 .75em rgb(56, 255, 202);
     }
-    60%{
+
+    60% {
         border: 2px rgb(53, 198, 255) solid;
         box-shadow: 0 0 .75em rgb(53, 198, 255);
     }
-    70%{
+
+    70% {
         border: 2px rgb(52, 99, 255) solid;
         box-shadow: 0 0 .75em rgb(52, 99, 255);
     }
-    80%{
+
+    80% {
         border: 2px rgb(126, 59, 252) solid;
         box-shadow: 0 0 .75em rgb(126, 59, 252);
     }
-    90%{
+
+    90% {
         border: 2px rgb(255, 62, 178) solid;
         box-shadow: 0 0 .75em rgb(255, 62, 178);
     }
-    100%{
+
+    100% {
         border: 2px rgb(255, 62, 62) solid;
         box-shadow: 0 0 .75em rgb(255, 62, 62);
     }
 }
 
 @keyframes goofy-ahh {
-    from{
+    from {
         transform: translateY(0);
     }
-    to{
+
+    to {
         transform: translateY(.8em);
     }
 }
