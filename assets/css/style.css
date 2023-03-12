@@ -82,7 +82,6 @@ p.abs {
 .tgs img,
 .mu img,
 .gca img {
-    height: 50%;
     width: 100%;
     max-width: 900px;
     border-radius: 1em;
