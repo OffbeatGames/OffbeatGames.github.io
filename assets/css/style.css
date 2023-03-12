@@ -5,6 +5,10 @@
     
 }
 
+a {
+    text-decoration: none;
+}
+
 body {
     background: linear-gradient(to bottom left,rgb(42, 38, 38),rgb(23, 23, 22) , rgba(8, 8, 8, 0.945));
     background-color: #004f8f;
@@ -85,7 +89,6 @@ p.abs{
 .tgs:hover,
 .mu:hover,
 .gca:hover {
-    box-shadow: 0 0 1em #4faff3b8;
     transform: scale(1.01) translateX(-1em) translateY(-1em);
     transition: .8s;
 }
@@ -102,39 +105,11 @@ footer {
     text-transform: capitalize;
     justify-content: space-evenly;
     margin: 0;
-    
-    /* border: 1px rgba(255, 255, 255, 0.589) solid; */
-    /* animation: br-changing 10s ease-in-out infinite alternate; */
     border-radius: 1em;
     font-size: 1.5em;
+    animation: goofy-ahh 3s ease-in-out infinite alternate;
     padding: .6em;
 }
-
-a {
-    display: flex;
-    flex-direction: column;
-    text-decoration: none;
-    align-items: center;
-    justify-content: center;
-}
-
-/*@keyframes color-changing {
-    0%{
-        color: #f5babaf1;
-    }
-    25%{
-        color: rgba(108, 182, 247, 0.81);
-    }
-    50%{
-        color: antiquewhite;
-    }
-    75%{
-        color: burlywood;
-    }
-    100%{
-        color: rgba(180, 255, 180, 0.856);
-    }
-}*/
 
 @keyframes color-changing2 {
     0%{
@@ -165,44 +140,54 @@ a {
 @keyframes br-changing{
     0%{
         border: 2px rgb(255, 66, 66) solid;
+        box-shadow: 0 0 .75em rgb(255, 66, 66);
     }
     10%{
         border: 2px rgb(255, 133, 12) solid;
+        box-shadow: 0 0 .75em rgb(255, 133, 12);
     }
     20%{
         border: 2px rgb(255, 196, 19) solid;
+        box-shadow: 0 0 .75em rgb(255, 196, 19);
     }
     30%{
         border: 2px rgb(12, 255, 41) solid;
-    }
+        box-shadow: 0 0 .75em rgb(12, 255, 41);    }
     40%{
         border: 2px rgb(12, 255, 113) solid;
+        box-shadow: 0 0 .75em rgb(12, 255, 113);
     }
     50%{
         border: 2px rgb(56, 255, 202) solid;
+        box-shadow: 0 0 .75em rgb(56, 255, 202);
     }
     60%{
         border: 2px rgb(53, 198, 255) solid;
+        box-shadow: 0 0 .75em rgb(53, 198, 255);
     }
     70%{
         border: 2px rgb(52, 99, 255) solid;
+        box-shadow: 0 0 .75em rgb(52, 99, 255);
     }
     80%{
         border: 2px rgb(126, 59, 252) solid;
+        box-shadow: 0 0 .75em rgb(126, 59, 252);
     }
     90%{
         border: 2px rgb(255, 62, 178) solid;
+        box-shadow: 0 0 .75em rgb(255, 62, 178);
     }
     100%{
         border: 2px rgb(255, 62, 62) solid;
+        box-shadow: 0 0 .75em rgb(255, 62, 62);
     }
 }
 
-/*@keyframes goofy-ahh {
+@keyframes goofy-ahh {
     from{
-        left: 0;
+        transform: translateY(0);
     }
     to{
-        left: 100%;
+        transform: translateY(.8em);
     }
-}*/
+}
