@@ -128,28 +128,28 @@ i.fa-youtube,i.fa-instagram,i.fa-envelope{
 
 @keyframes color-changing2 {
     0% {
-       -webkit-background: burlywood;
+       background: burlywood;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         /* box-shadow: -20px 0px 15px rgb(45, 118, 255); */
     }
 
     33% {
-       -webkit-background: #f5babaf1;
+        background: #f5babaf1;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         /* box-shadow: 20px 0px 15px rgb(45, 118, 255); */
     }
 
     66% {
-       -webkit-background: antiquewhite;
+       background: antiquewhite;
        -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         /* box-shadow: 0px 10px 15px rgb(45, 118, 255); */
     }
 
     100% {
-       -webkit-background: burlywood;
+       background: burlywood;
        -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         /* box-shadow: 0px -10px 15px rgb(45, 118, 255); */
